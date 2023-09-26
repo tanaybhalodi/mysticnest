@@ -1,0 +1,21 @@
+/* Reset some default styles for the body and container */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Create a container with 100% width and height */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the image */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}

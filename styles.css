@@ -13,9 +13,30 @@ body, html {
     height: 100%;
 }
 
-/* Style the image */
-img {
+/* Style the desktop image */
+#desktop-image {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+/* Hide the mobile image by default */
+#mobile-image {
+    display: none;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    /* Hide the desktop image on mobile */
+    #desktop-image {
+        display: none;
+    }
+
+    /* Show the mobile image on mobile */
+    #mobile-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the entire container */
+    }
 }
